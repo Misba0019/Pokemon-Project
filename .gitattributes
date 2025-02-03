@@ -1,0 +1,7 @@
+# Setting the default behavior to automatically normalize line endings
+* text=auto
+
+# Explicitly declaring text files I want to always normalize
+*.html text
+*.css text
+*.js text
