@@ -1,9 +1,11 @@
-
- h1{
+h1 {
     font-family: "PT Sans", serif;
     text-align: center;
     text-decoration-line: underline;
-    color: purple;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text; /* For WebKit browsers */
+    background-clip: text; /* Standard property for other browsers */
+    color: transparent;
 }
 
 .pokemon{
