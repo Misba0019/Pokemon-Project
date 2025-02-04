@@ -5,3 +5,6 @@
 *.html text
 *.css text
 *.js text
+
+# Ensuring all text files use LF line endings
+* text eol=lf
