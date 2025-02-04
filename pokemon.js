@@ -19,5 +19,3 @@ for (let i = 1; i <= 151; i++) {
 // `${baseUrl}${i}.png`: Constructs the image URL as:
 // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png,
 // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png, etc.
-
-    <p>Pokémon images are sourced from <a href="https://github.com/PokeAPI/sprites" target="_blank">PokeAPI</a>.</p>
