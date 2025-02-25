@@ -18,7 +18,7 @@ This project creates a simple Pokémon gallery displaying the first 151 Pokémon
     cd Pokemon-Project
     ```
 
-3. **Open the `index.html` file in your preferred web browser.**
+3. **Open the `Pokemon.html` file in your preferred web browser.**
 
 ## Credits
 - Pokémon images are sourced from [PokeAPI](https://github.com/PokeAPI/sprites).
