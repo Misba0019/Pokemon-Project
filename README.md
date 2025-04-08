@@ -24,4 +24,4 @@ This project creates a simple Pokémon gallery displaying the first 151 Pokémon
 - Pokémon images are sourced from [PokeAPI](https://github.com/PokeAPI/sprites).
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
