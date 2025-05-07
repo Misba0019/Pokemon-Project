@@ -1,10 +1,14 @@
 # Pokémon Gallery
 ## Overview
-This project creates a simple Pokémon gallery displaying the first 151 Pokémon. It fetches and displays images of each Pokémon along with their respective numbers using data from the [PokéAPI](https://github.com/PokeAPI/sprites).
+This project creates a simple Pokémon gallery displaying the first 151 Pokémon. It fetches and displays images of each Pokémon along with their respective numbers using data from the [PokéAPI](https://github.com/PokeAPI/sprites).  
+To avoid rate-limiting issues, a delay is added between requests when fetching the images.
 
 ## Features
 - **Dynamic Gallery**:  
 Displays the first 151 Pokémon with images and numbers fetched from the PokéAPI.
+
+- **Rate-Limit Friendly**:  
+A delay is implemented between requests to ensure compliance with the PokeAPI's rate-limiting policies.
 
 - **Responsive Layout**:  
 Ensures side-by-side display of Pokémon images, adapting to screen sizes.
