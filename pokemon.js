@@ -17,8 +17,8 @@ async function loadPokemon() {
         pokemon.appendChild(label);
         container.appendChild(pokemon);
 
-        // Add a delay of 100ms between requests
-        await new Promise(resolve => setTimeout(resolve, 100));
+        // Add a delay of 600ms between requests
+        await new Promise(resolve => setTimeout(resolve, 600));
     }
 }
 
