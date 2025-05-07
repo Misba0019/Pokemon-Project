@@ -2,20 +2,27 @@
 const container = document.querySelector('#container'); // Select section by3. ID
 const baseUrl = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/'; // Base URL for Pokémon images
 
-for (let i = 1; i <= 151; i++) {
-    const pokemon = document.createElement('div'); // Create a div element
-    pokemon.classList.add('pokemon'); // Add a class named "pokemon"
+async function loadPokemon() {
+    for (let i = 1; i <= 151; i++) {
+        const pokemon = document.createElement('div');
+        pokemon.classList.add('pokemon');
 
-    const label = document.createElement('span'); // Create a span
-    label.innerText = `#${i}`; // Set the inner text to the Pokémon number
+        const label = document.createElement('span');
+        label.innerText = `#${i}`;
 
-    const newImg = document.createElement('img'); // Create an img element
-    newImg.src = `${baseUrl}${i}.png`; // Construct the URL for each Pokémon image
+        const newImg = document.createElement('img');
+        newImg.src = `${baseUrl}${i}.png`;
 
-    pokemon.appendChild(newImg); // Append the img element to the div
-    pokemon.appendChild(label); // Append the span element to the div
-    container.appendChild(pokemon); // Append the div element to the container
+        pokemon.appendChild(newImg);
+        pokemon.appendChild(label);
+        container.appendChild(pokemon);
+
+        // Add a delay of 100ms between requests
+        await new Promise(resolve => setTimeout(resolve, 100));
+    }
 }
+
+loadPokemon();
 // `${baseUrl}${i}.png`: Constructs the image URL as:
 // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png,
 // https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png, etc.
